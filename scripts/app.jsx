@@ -1,7 +1,7 @@
 var React = require('react/addons');
+window.React = React;
 var Cursor = require('react-cursor').Cursor;
-
-var Clicker = require('./clicker.jsx');
+var Clicker = require('./components/clicker.jsx');
 
 'use strict';
 
@@ -43,4 +43,4 @@ var App = React.createClass({
     }
 });
 
-module.exports = App;
+React.render(<App />, document.getElementById('content'));

@@ -16,9 +16,9 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
     p = {
-      jsx: './scripts/main.jsx',
+      jsx: './scripts/app.jsx',
       scss: 'styles/main.scss',
-      bundle: 'main.js',
+      bundle: 'app.js',
       distJs: 'dist/js',
       distCss: 'dist/css'
     };
