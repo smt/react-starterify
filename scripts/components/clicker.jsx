@@ -6,11 +6,11 @@ var Clicker = React.createClass({
     mixins: [ImmutableOptimizations(['cursor'])],
 
     render: function () {
-        console.log('rendering clicker ', this.props.index);
+        console.log('rendering clicker ', this.props.idx);
         return (
             <div>
-                <label for={"clicker-" + this.props.index}>{this.props.index}:</label>
-                <input id={"clicker-" + this.props.index} type="text" value={this.props.cursor.value} set={this.onInputChange} readOnly />
+                <label htmlFor={"clicker-" + this.props.idx}>{this.props.idx}:</label>
+                <input id={"clicker-" + this.props.idx} type="text" value={this.props.cursor.value} onChange={this.onInputChange} />
                 <span>{this.props.cursor.value}</span>
                 <button onClick={this.inc2}>+2</button>
                 <button onClick={this.inc10}>+10</button>

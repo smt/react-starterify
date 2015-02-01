@@ -31,7 +31,7 @@ var App = React.createClass({
         var cursor = Cursor.build(this);
         var counts = cursor.refine('very', 'deeply', 'nested', 'counts');
         var contents = counts.value.map(function (count, index) {
-            return (<Clicker index={index} cursor={counts.refine(index)} />);
+            return (<Clicker key={'clicker_' + index} idx={index} cursor={counts.refine(index)} />);
         }.bind(this));
 
         return (
